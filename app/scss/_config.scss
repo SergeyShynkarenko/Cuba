@@ -60,13 +60,22 @@ a {
 li {
   list-style-type: none;
 }
-
+.container {
+	max-width: 1200px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+.container-content {
+	max-width: 970px;
+	margin: 0 auto;
+}
 body {
 	font-family: $roboto;
 	font-size: $fontsize;
+	font-weight: 400;
 	min-width: 320px;
 	position: relative;
-	line-height: 1.65;
+	line-height: 28px;
 	overflow-x: hidden;
 	color: $textcolor;
 }

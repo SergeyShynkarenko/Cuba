@@ -8,5 +8,45 @@
 	}
 	&__item {
 		margin-bottom: 100px;
+		padding: 70px 0;
+		background-repeat: no-repeat;
+		background-position: right;
+		&:nth-child(even) {
+			background-position: left;
+			.about__box:nth-child(even) {
+				margin-left: auto;
+			}
+		}
+	}
+	&__box {
+		padding: 33px 40px;
+		background: #fff;
+		position: relative;
+		max-width: 470px;
+		&::after {
+			content: '';
+			position: absolute;
+			width: 33px;
+			height: 33px;
+			right: 19px;
+			bottom: 19px;
+			background-image: url('../images/dest/decor-right.svg');
+		}
+		&::before {
+			content: '';
+			position: absolute;
+			width: 33px;
+			height: 33px;
+			top: 19px;
+			left: 19px;
+			background-image: url('../images/dest/decor-left.svg');
+		}
+		&-title {
+			font-family: Georgia, sans-serif;
+			font-size: 24px;
+			line-height: 25px;
+			color: #4E5665;
+			margin-bottom: 20px;
+		}
 	}
 }

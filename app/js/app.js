@@ -1,5 +1,5 @@
-document.addEventListener("DOMContentLoaded", function() {
+$(function() {
 
-	// Custom JS
+	$('.photo__slider').slick();
 
 });

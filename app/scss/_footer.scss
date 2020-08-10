@@ -1,0 +1,69 @@
+.footer {
+	background: #F8F8F8;
+	padding: 55px 0 32px;
+	&__items {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__item {
+		width: 140px;
+		&--blog {
+			width: 300px;
+		}
+		&__item--company {
+			width: 300px;
+			padding-left: 180px;
+		}
+		&-title {
+			font-weight: 700;
+			font-size: 15px;
+			line-height: 20px;
+			color: #4E5665;
+			margin-bottom: 20px;
+			text-transform: uppercase;
+		}
+		&-link {
+			font-size: 14px;
+			line-height: 19px;
+			margin-bottom: 8px;
+			&--social {
+				padding-left: 28px;
+				position: relative;
+				&::before {
+					content: '';
+					position: absolute;
+					left: 0;
+					width: 16px;
+					height: 16px;
+				}
+			}
+			&--message::before {
+				background-image: url('../images/dest/masage.svg');
+				width: 17px;
+				top: 1px;
+			}
+			&--facebook::before {
+				background-image: url('../images/dest/facebook.svg');
+			}
+			&--instagram::before {
+				background-image: url('../images/dest/instagram.svg');
+			}
+			&--youtube::before {
+				background-image: url('../images/dest/youtube.svg');
+			}
+			&--email::before {
+				background-image: url('../images/dest/emaill.svg');
+				height: 13px;
+				top: 2px;
+			}
+		}
+	}
+
+	&__copy {
+		padding-top: 40px;
+		text-align: center;
+		font-size: 14px;
+		line-height: 19px;
+	}
+}
+

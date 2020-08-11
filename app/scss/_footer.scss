@@ -7,6 +7,9 @@
 	}
 	&__item {
 		width: 140px;
+		&-list {
+			padding-left: 0;
+		}
 		&--blog {
 			width: 300px;
 		}

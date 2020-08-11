@@ -49,4 +49,85 @@
 			margin-bottom: 20px;
 		}
 	}
+	&__preview {
+		&-title {
+			margin-bottom: 38px;
+		}
+		&-text {
+			margin: 53px auto 80px;
+		}
+	}
+	&__images-box {
+		margin: 0 auto;
+		padding-top: 73px;
+		position: relative;
+	}
+	&__dot {
+		width: 32px;
+		height: 32px;
+		border-radius: 50%;
+		background-color: rgba(236, 184, 76, .75);
+		position: absolute;
+		cursor: pointer;
+		&:hover::before {
+			content: '';
+			display: block;
+		}
+		&:hover .about__dot-text {
+			display: block;
+		}
+		&::before {
+			content: '';
+			background-image: url('../images/dest/line.svg');
+			width: 244px;
+			height: 122px;
+			top: -113px;
+			left: 25px;
+			position: absolute;
+			display: none;
+		}
+		&::after {
+			content: '';
+			position: absolute;
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			background-color: #FFD600;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+		&-text {
+			font-weight: 700;
+			font-size: 14px;
+			line-height: 28px;
+			color: #505050;
+			position: absolute;
+			top: -140px;
+			left: 150px;
+			white-space: nowrap;
+			display: none;
+		}
+
+
+		&--1 {
+			top: 190px;
+			left: 148px;
+		}
+
+		&--2 {
+			top: 188px;
+			left: 495px;
+		}
+
+		&--3 {
+			top: 147px;
+			right: 374px;
+		}
+
+		&--4 {
+			bottom: 28px;
+			right: 299px;
+		}
+	}
 }

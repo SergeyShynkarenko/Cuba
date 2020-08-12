@@ -58,7 +58,7 @@
 		}
 	}
 	&__images-box {
-		margin: 0 auto;
+		text-align: center;
 		padding-top: 73px;
 		position: relative;
 	}
@@ -112,22 +112,22 @@
 
 		&--1 {
 			top: 190px;
-			left: 148px;
+			left: 280px;
 		}
 
 		&--2 {
 			top: 188px;
-			left: 495px;
+			left: 635px;
 		}
 
 		&--3 {
 			top: 147px;
-			right: 374px;
+			right: 500px;
 		}
 
 		&--4 {
 			bottom: 28px;
-			right: 299px;
+			right: 435px;
 		}
 	}
 }

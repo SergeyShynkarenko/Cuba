@@ -1,3 +1,98 @@
+@media (max-width: 1350px) {
+	.about__dot--1 {
+   top: 180px;
+   left: 185px;
+	}
+	.about__dot--2 {
+    top: 188px;
+    left: 490px;
+  }
+ 	.about__dot--3 {
+    top: 145px;
+    right: 390px;
+	}
+	.about__dot--4 {
+    bottom: 28px;
+    right: 328px;
+	}
+}
+
+@media (max-width: 1150px) {
+	.about__dot--1 {
+    top: 180px;
+    left: 92px;
+  }
+  .about__dot--2 {
+    top: 188px;
+    left: 400px;
+	}
+	.about__dot--3 {
+    top: 145px;
+    right: 290px;
+	}
+	.about__dot--4 {
+    bottom: 28px;
+    right: 225px;
+	}
+}
+
+@media (max-width: 1058px) {
+	.about__dot--3 {
+    top: 135px;
+    right: 172px;
+	}
+	.about__dot--4 {
+    bottom: 30px;
+    right: 108px;
+	}
+	.footer__item--company {
+		width: 140px;
+		padding-left: 0;
+	}
+}
+
+@media (max-width: 1058px) {
+	.about__dot--3 {
+    top: 135px;
+    right: 43px;
+	}
+	.about__dot--4 {
+    bottom: 30px;
+    right: 0;
+	}
+}
+
+@media (max-width: 840px) {
+	.about {
+		&__item {
+			padding: 382px 0 70px;
+			background-position: top;
+			margin-bottom: 0;
+			&:nth-child(even) {
+				background-position: top;
+			}
+		}
+		&__box {
+			margin: 0 auto;
+		}
+		&__dot {
+			display: none;
+		}
+		&__images-box {
+			padding-top: 0;
+		}
+	}
+	.footer__items {
+		flex-wrap: wrap;
+	}
+	.footer__item {
+		width: 50%;
+		margin-bottom: 35px;
+		padding-right: 25px;
+	}
+}
+
+
 @media (max-width: 700px) {
 	.header {
 		&__title {
@@ -38,8 +133,14 @@
 			}
 		}	
 	}
+	.slick-next {
+		right: 20px;
+	}
+	.slick-prev {
+		left: 20px;
+	}
 }
-@media (max-width: 700px) {
+@media (max-width: 540px) {
 	.header {
 		&__text {
 			display: none;
@@ -54,7 +155,35 @@
 			font-size: 100px;
 		}
 	}
+	.title {
+		font-size: 24px;
+		line-height: 28px;
+	}
+	body {
+		font-size: 15px;
+		line-height: 24px;
+	}
+	.reason__statistics {
+		display: block;
+		&-item {
+			margin-bottom: 35px;
+		}
+	}
 }
+
+@media (max-width: 470px) {
+	.slick-next, .slick-prev {
+		display: none;
+	}
+	.footer__items {
+		display: block;
+	}
+	.footer__item {
+		width: 100%;
+		padding-right: 0;
+	}
+}
+
 @media (min-width: 700px) {
 	.menu__list {
 		display: flex !important;

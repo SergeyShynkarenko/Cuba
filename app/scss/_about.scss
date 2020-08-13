@@ -10,12 +10,8 @@
 		margin-bottom: 100px;
 		padding: 70px 0;
 		background-repeat: no-repeat;
-		background-position: right;
 		&:nth-child(even) {
-			background-position: left;
-			.about__box:nth-child(even) {
-				margin-left: auto;
-			}
+			background-position: right;
 		}
 	}
 	&__box {
@@ -23,6 +19,9 @@
 		background: #fff;
 		position: relative;
 		max-width: 470px;
+		&:nth-child(even) {
+			margin-left: auto;
+		}
 		&::after {
 			content: '';
 			position: absolute;
